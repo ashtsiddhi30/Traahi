@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traahi - A Platform for Change</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo" onclick="showPage('homepage')">
+                <i data-feather="heart"></i>
+                <span>Traahi</span>
+            </div>
+            <nav id="nav-links" class="nav-links"></nav>
+            <div class="theme-switcher">
+                <button id="theme-toggle-btn" class="theme-toggle-btn">
+                    <i data-feather="sun" id="sun-icon"></i>
+                    <i data-feather="moon" id="moon-icon" class="hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="homepage" class="page-section"></section>
+        <section id="campaigns" class="page-section"></section>
+        <section id="donations" class="page-section"></section>
+        <section id="about" class="page-section"></section>
+        <section id="submit-campaign" class="page-section"></section>
+        <section id="registration" class="page-section"></section>
+        <section id="login" class="page-section"></section>
+        <section id="register" class="page-section"></section>
+        <section id="dashboard" class="page-section"></section>
+        <section id="edit-campaign" class="page-section"></section>
+        <section id="event-report" class="page-section"></section>
+        <section id="edit-report" class="page-section"></section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Traahi. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <div id="confirmation-modal" class="modal-overlay hidden">
+        <div class="modal-box" data-aos="zoom-in">
+            <h3 class="modal-title" id="modal-title">Are you sure?</h3>
+            <p class="modal-text" id="modal-text">This action cannot be undone.</p>
+            <div class="modal-actions">
+                <button id="modal-cancel-btn" class="button-secondary">Cancel</button>
+                <button id="modal-confirm-btn" class="button-danger">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <div id="toast"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

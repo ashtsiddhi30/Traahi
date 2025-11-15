@@ -1,0 +1,18 @@
+# Environment files (VERY IMPORTANT)
+.env
+traahi backend/.env
+
+# Node modules
+node_modules/
+main/node_modules/
+traahi backend/node_modules/
+
+# Upload folders
+traahi backend/uploads/
+
+# Logs
+*.log
+
+# IDE / System files
+.vscode/
+.DS_Store
